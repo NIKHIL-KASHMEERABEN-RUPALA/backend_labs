@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let ,var difference</title>
+
+
+</head>
+<body>
+    
+
+        <script>
+
+
+            // variable is function scoped 
+            // let is block scoped 
+            
+            function var_test(){
+                var a = 10;
+                console.log("in function scope, var gives us "+a);
+            }
+
+            alert("outside function scope , the var gives "+a);
+
+            
+            function let_test(){
+                let b = 100;
+                console.log("in function scope, let gives us "+b);   
+            }
+
+            alert("outside function scope , the let gives "+b);
+
+
+            var_test();
+            let_test();
+
+        </script>
+
+
+</body>
+</html>

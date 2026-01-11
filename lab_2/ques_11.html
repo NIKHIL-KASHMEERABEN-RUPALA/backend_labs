@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques_11</title>
+</head>
+<body>
+
+
+
+        <form>
+
+            <input type="checkbox" onclick=printRoll() >1
+            <input type="checkbox" onclick=printRoll()>2
+            <input type="checkbox" onclick=printRoll()>3 
+            <input type="checkbox" onclick=printRoll()>4
+            <input type="checkbox" onclick=printRoll()>5    
+   
+
+
+        </form>
+
+
+
+
+    <script>
+
+        function printRoll(){
+            let inputs = document.getElementsByTagName('input');
+            let selectedRolls = [];
+            for(let i=0; i<inputs.length; i++){
+                if(inputs[i].checked){
+                    selectedRolls.push(i+1);
+                }
+            }
+            document.write("Selected roll numbers: " + selectedRolls.join(", ") + "<br>");
+        }
+
+
+
+    </script>
+
+    
+</body>
+</html>

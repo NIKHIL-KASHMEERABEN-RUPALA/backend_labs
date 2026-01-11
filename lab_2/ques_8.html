@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a class in javascript</title>
+</head>
+<body>
+
+
+    <script>
+        class Car{
+            constructor(name , year){
+                this.name = name;
+                this.year = year;
+            }
+            display(){
+                return `car name is ${this.name} and car model is ${this.year}`;
+            }
+        }
+
+
+        let myCar = new Car("Defender",2025);
+        document.write(myCar.display());
+    </script>
+    
+</body>
+</html>
