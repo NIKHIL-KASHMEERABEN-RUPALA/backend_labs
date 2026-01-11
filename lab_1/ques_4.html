@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci series</title>
+</head>
+<body>
+
+    <script>
+
+        let a = parseInt(prompt("Enter a ending range  :   "));
+        let x = 2;
+
+        let first = 0;
+            let second = 1;
+
+            alert("the fibonacci series is : ");
+            document.writeln(first+" ");
+            document.writeln(second+" ");   
+
+        while(x!=a){
+            
+            let next = first+second;
+            document.writeln(next+" ");
+            first = second ;
+            second = next;
+            x++;
+        }
+
+
+
+    </script>
+
+    
+</body>
+</html>

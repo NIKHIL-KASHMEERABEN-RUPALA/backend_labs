@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+<body>
+
+    <script>
+
+        let a = prompt("Enter first number: ");
+        let b = prompt("Enter second number: ");
+
+        let c = prompt("Enter operator (+,-,*,/):   ");
+
+        let A = parseInt(a);
+        let B = parseInt(b);
+
+
+        switch(c){
+            case "+":
+             alert("the sum is : " + (A + B));
+            break;
+
+            case "-":
+                alert("The difference is : "+(A-B));
+                break;
+
+            case "*":
+                alert("The product is : "+(A*B));
+                break;
+
+            case "/":
+                alert("The division is :    " + (A/B));
+                break;
+
+            default:
+                alert("invalid character entered ! ");
+
+
+            }
+
+            
+
+
+    </script>
+
+
+    
+</body>
+</html>

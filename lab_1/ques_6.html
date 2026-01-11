@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+
+    <script>
+
+
+        
+
+        let a = parseInt(prompt("Enter a number :   "));
+        let sum = 0;
+        let x = a;
+        let z = a;
+        let total_digit = 0;
+
+        while(a>0){
+
+            let digit = a%10;
+            total_digit++;
+            a=Math.floor(a/10);
+            
+        }
+
+        let second_sum = 0;
+
+        while(x>0){
+            let second_digit = x%10;
+            second_sum+=Math.pow(second_digit,total_digit);
+            x=Math.floor(x/10);
+        }
+
+
+
+        if(z == second_sum){
+            alert("armstrong number !");
+        }else{
+            alert("Not a amrstrong number !");
+        }
+
+
+    </script>
+    
+</body>
+</html>

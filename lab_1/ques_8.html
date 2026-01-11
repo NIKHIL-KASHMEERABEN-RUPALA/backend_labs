@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number in range</title>
+</head>
+<body>
+    
+    <script>
+
+
+                // function isPrime of type boolean
+                // take parameter as number stored in i from the for loop
+                // take a variable 'factor' whose initial value is 2;
+                // start a for loop from 2 upto i/2 , i++
+                // at end of for loop if factor == 2 then it is a prime , return true 
+                // else at end of for loop if not prime , return false
+
+
+
+
+            let a  = parseInt(prompt("Enter a starting number :      "));
+            let b  = parseInt(prompt("Enter a ending number :      "));
+
+            let i = a;
+
+            for( i = a ; i < b ; i++){
+
+                if(isPrime(i)){
+                    document.write(i);
+                }
+                else{
+                    continue;
+                }
+
+
+            }
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime or not</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        let a = parseInt(prompt("Enter number to check :     "));
+        let factors = 2;
+
+        let start = 2;
+
+        for( start = 2 ; start < a/2 ; start++){
+            if(a % start == 0){
+                factors++;
+            }
+            else{
+                continue;
+            }
+        }
+
+
+        if(factors > 2){
+            document.writeln("The number is not prime ");
+        }
+        else{
+            document.writeln("The number is prime ");
+        }
+
+        
+        
+
+    </script>
+
+
+</body>
+</html>
